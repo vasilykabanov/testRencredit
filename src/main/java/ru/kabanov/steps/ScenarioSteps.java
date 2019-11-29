@@ -14,11 +14,6 @@ public class ScenarioSteps {
     MainSteps mainSteps = new MainSteps();
     DepositSteps depositSteps = new DepositSteps();
 
-    @Когда("^пользователь перешел в раздел - Вклады$")
-    public void whenClickDeposit() {
-        mainSteps.stepClickDeposit();
-    }
-
     @Когда("выбран сервис \"(.*)\"")
     public void whenSelectService(String serviceName) {
         mainSteps.stepSelectService(serviceName);

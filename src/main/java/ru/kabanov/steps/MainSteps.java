@@ -10,13 +10,7 @@ public class MainSteps {
 
     MainPage mainPage = new MainPage();
 
-    @Step("выбираем раздел Вклады")
-    public void stepClickDeposit() {
-        mainPage.waitElementIsDisplayed(mainPage.openDepositButton);
-        mainPage.openDepositButton.click();
-    }
-
-    @Step("выбираем раздел \"(.*)\"")
+    @Step("выбираем раздел {0}")
     public void stepSelectService(String serviceName) {
         mainPage.selectService(serviceName);
     }

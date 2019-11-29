@@ -16,8 +16,6 @@ import java.util.List;
  */
 public class MainPage extends BasePage {
 
-    @FindBy(xpath = "(//a[@href='/contributions/'])[2]")
-    public WebElement openDepositButton;
 
     @FindBy(xpath = "//div[@class='service']")
     public List<WebElement> services;
